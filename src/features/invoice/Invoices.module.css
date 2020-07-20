@@ -1,0 +1,29 @@
+.card {
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2), 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12);
+  border-radius: 8px;
+  padding: 32px;
+  color: #5f6368;
+}
+
+.card > div:first-child {
+  font-size: 24px;
+  color: #000;
+  line-height: 34px;
+}
+
+.card > div {
+  line-height: 40px;
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 24px;
+}

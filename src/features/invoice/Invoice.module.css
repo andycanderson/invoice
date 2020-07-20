@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.subheader {
+  font-size: 18px;
+  padding: 48px 0 24px;
+}
+
+.add {
+  padding: 24px 0;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actions {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actions button {
+  margin-left: 16px;
+}
