@@ -8,6 +8,7 @@ import {
 } from '@material-ui/pickers';
 import Button from '@material-ui/core/Button';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { createInvoice, editInvoice, deleteInvoice } from './invoiceSlice';
 import { getTotal } from './Invoices';
 import styles from './Invoice.module.css';
@@ -222,12 +223,21 @@ export function Invoice() {
         </div>
         <div className={styles.actions}>
           <Button
+            to="/"
+            variant="outlined"
+            type="submit"
+            color="primary"
+            component={Link}            
+          >
+            Back
+          </Button>
+          <Button
             variant="contained"
             type="submit"
             color="primary"
             disabled={isDisabled()}
           >
-            {isCreate ? 'Create' : 'Edit'}
+            {isCreate ? 'Create' : 'Save'}
           </Button>
           {!isCreate &&
             <Button
